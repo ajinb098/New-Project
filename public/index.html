@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Git Practice App</title>
+</head>
+<body>
+  <h1>Git Practice App</h1>
+  <p id="time">Loading time...</p>
+
+  <button id="refresh">Refresh time</button>
+
+  <script>
+    async function loadTime() {
+      const res = await fetch('/api/time');
+      const data = await res.json();
+      document.getElementById('time').innerText = data.now;
+    }
+
+    document.getElementById('refresh').addEventListener('click', loadTime);
+    loadTime();
+  </script>
+</body>
+</html>
