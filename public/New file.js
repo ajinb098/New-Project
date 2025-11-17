@@ -1,0 +1,18 @@
+{
+  "name": "my-new-project",
+  "version": "1.0.0",
+  "description": "Small Express app to practice Git and VS Code",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Ajinb098",
+  "license": "MIT"
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
